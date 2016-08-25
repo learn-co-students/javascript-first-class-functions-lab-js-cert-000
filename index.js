@@ -1,6 +1,6 @@
 function countdown(callback){
   window.setTimeout(callback, 2000);
-  done();
+  
 }
 function multiplier(val1, val2) {
   return function({
