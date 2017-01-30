@@ -1,14 +1,12 @@
 function countdown(callback) {
 console.log ('the keyboard tunes stop')
-return callback
+return window.setTimeout(callback, 2000)
 }
 
 function callback (){
 console.log ('the vocals kick in')
 }
 
-var europe = countdown(callback)
-window.setTimeout(europe, 2000)
 
 function multiplierValue(multiplier) {
 return (value)=>multiplier*value
