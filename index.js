@@ -19,6 +19,9 @@ return multiplierValue(2)
 if (score==='triple'){
 return multiplierValue(3)
 }
+else{
+return multiplierValue
+}
 }
 
 var doubler = createMultiplier('double')
