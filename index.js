@@ -7,26 +7,16 @@ function callback (){
 console.log ('the vocals kick in')
 }
 
-
-function multiplierValue(multiplier) {
+function createMultiplier(multiplier) {
 return (value)=>multiplier*value
 }
 
-function createMultiplier(score) {
-if (score==='double'){
-return multiplierValue(2)
-}
-if (score==='triple'){
-return multiplierValue(3)
-}
-else{
-return multiplierValue
-}
+function multiplierValue(score) {
+return createMultiplier(score)
 }
 
-var doubler = createMultiplier('double')
-var tripler = createMultiplier('triple')
-
+var doubler = multiplierValue(2)
+var tripler = multiplierValue(3)
 
 function multiplier(multiplierValue, value) {
 return multiplierValue* value
